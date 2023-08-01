@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      progress {
+        position: absolute;
+        height: 24px;
+        width: 500px;
+        border: 1px solid #fff;
+      }
+      progress::before {
+        content: "Loading: " attr(value) "%";
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        color: blue;
+      }
+      progress::-webkit-progress-bar {
+        background-color: orange;
+      }
+      progress::-webkit-progress-value {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Create progress with additional information bar Using CSS</h3>
+    <progress value="30" max="100"></progress>
+  </body>
+</html>

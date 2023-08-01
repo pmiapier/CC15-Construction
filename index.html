@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/4161a01eed.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        background-image: url("img/scott-unsplash-larger.jpg");
+        font-family: Roboto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1,
+      h6 {
+        text-align: center;
+        color: #fff;
+      }
+
+      h1 {
+        font-size: 90px;
+        font-weight: 400;
+        letter-spacing: -2px;
+      }
+
+      h6 {
+        font-weight: 300px;
+        letter-spacing: 5px;
+      }
+
+      button {
+        background-color: rgb(196, 234, 241);
+        border: 1px solid rgb(196, 234, 241);
+        border-radius: 2px;
+        padding: 10px 30px;
+        color: black;
+        font-size: 16px;
+        font-weight: 100px;
+        letter-spacing: 2px;
+        margin-top: 50px;
+      }
+
+      button:hover {
+        background-color: rgb(203, 160, 30);
+        border: 1px solid rgb(203, 160, 30);
+      }
+
+      .heroSection {
+        /* background-color: #304232; */
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        /* border: 1px solid #fff; */
+      }
+
+      .loading p {
+        display: inline-block;
+        color: #fff;
+      }
+
+      .percentageSection {
+        text-align: center;
+      }
+
+      .percentageSection p {
+        display: inline-block;
+        color: #fff;
+      }
+
+      .zeroPercent {
+        width: 47%;
+      }
+
+      .hundredPercent {
+        width: 48%;
+      }
+      /* .loadingpercent {
+        background-color: rgb(196, 234, 241);
+        width: 30%;
+        height: 10px;
+        border: 1px solid rgb(190, 228, 239);
+        box-shadow: 2px 2px 2px 0px rgba(245, 245, 245, 0.75);
+        margin-left: auto;
+        margin-right: auto;
+      } */
+
+      .buttnSection {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      /* .button {
+        margin-left: auto;
+        margin-right: auto;
+      } */
+
+      progress {
+        width: 50%;
+        border: 1px solid #8e8d8d;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      progress::-webkit-progress-bar {
+        background-color: rgb(255, 255, 255);
+      }
+
+      progress::-webkit-progress-value {
+        background-color: rgb(186, 230, 241);
+      }
+
+      footer {
+        text-align: center;
+        color: rgb(161, 158, 158);
+        margin-top: auto;
+      }
+
+      hr {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .navBar {
+        width: 90%;
+        margin-top: 20px;
+        text-align: end;
+      }
+
+      li {
+        list-style: none;
+        /* display: inline-block;
+        align-items: center; */
+      }
+
+      a {
+        text-decoration: none;
+        color: #d6d0d0;
+        /* font-style: italic; */
+      }
+
+      a:hover {
+        color: rgb(203, 160, 30);
+      }
+
+      .iconList {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0) (0, 0, 255, 0);
+        padding-right: 25px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      .iconLink {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #ffffff;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        /* text-decoration: none; */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navBar">
+      <ul>
+        <li><a href="index_constru.html">HOME</a></li>
+      </ul>
+    </nav>
+    <div class="heroSection">
+      <main>
+        <h1>UNDER</h1>
+        <h1>CONSTRUCTION</h1>
+        <h6>SITE NEARLY READY</h6>
+        <div class="buttnSection">
+          <progress value="70" max="100"></progress>
+        </div>
+
+        <section class="percentageSection">
+          <p class="zeroPercent">0%</p>
+          <p class="hundredPercent">100%</p>
+        </section>
+
+        <section class="buttnSection">
+          <button type="button" onclick="alert('Message box!')">
+            Notify Me!
+          </button>
+        </section>
+
+        <section class="buttnSection">
+          <ul>
+            <li class="iconList">
+              <a href="#" class="iconLink"
+                ><i
+                  class="fa-brands fa-facebook fa-2xl"
+                  style="color: #ffffff"
+                ></i
+              ></a>
+            </li>
+
+            <li class="iconList">
+              <a href="#" class="iconLink"
+                ><i
+                  class="fa-brands fa-twitter fa-2xl"
+                  style="color: #ffffff"
+                ></i
+              ></a>
+            </li>
+            <li class="iconList">
+              <a href="#" class="iconLink"
+                ><i
+                  class="fa-brands fa-linkedin fa-2xl"
+                  style="color: #ffffff"
+                ></i
+              ></a>
+            </li>
+            <li class="iconList">
+              <a href="#" class="iconLink"
+                ><i
+                  class="fa-solid fa-envelope fa-2xl"
+                  style="color: #ffffff"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <hr />
+      <p>&#64;2023 by Under Construction.</p>
+    </footer>
+  </body>
+</html>
